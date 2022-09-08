@@ -44,6 +44,7 @@ class FirstSampleTest(unittest.TestCase):
         ActionChains(driver).drag_and_drop_by_offset(ele, 80, 0).perform()
 
         ele1 = driver.find_element(By.ID, "rangeSuccess").text
+        time.sleep(5)
 
         print(ele1)
 
